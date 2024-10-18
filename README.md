@@ -1,5 +1,34 @@
 # Report Generation
- 
+ # Python Assignment - Django File Upload and Report Generation
+
+This project is developed as part of a Django intern role assignment. It is a web-based application that allows users to upload an Excel/CSV file, generates a summary report of the uploaded data, and sends the report via email.
+
+## Features
+- **File Upload:** Users can upload an Excel or CSV file via a web interface.
+- **Data Summary:** The application generates a summary report for the uploaded data, including row count, column count, column names, and basic statistics.
+- **Email Report:** The generated summary report is emailed to `tech@themedius.ai` with the subject "Python Assignment - {Your Name}".
+- **Git Branch:** The code is pushed to a Git branch named after the developer.
+- **Deployment:** The project is deployed on an open-source server (like Heroku).
+
+## Prerequisites
+To run this project locally, you’ll need the following installed:
+- Python 3.x
+- Django 4.x
+- Pandas
+- Gunicorn (for deployment)
+- Git
+
+### Email Configuration
+Before running the project, make sure to configure the email settings in `settings.py` with valid SMTP details:
+
+```python
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.example.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'your_email@example.com'
+EMAIL_HOST_PASSWORD = 'your_password'
+
 Python Assignment - Django File Upload and Report Generation
 This project is developed as part of a Django intern role assignment. It is a web-based application that allows users to upload an Excel/CSV file, generates a summary report of the uploaded data, and sends the report via email.
 
